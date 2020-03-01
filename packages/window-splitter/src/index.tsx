@@ -302,8 +302,9 @@ export const WindowSplitterContainer = forwardRefWithAs<WindowProps, "div">(
           flag = true;
           break;
         case "F6":
-          newValue = value === max ? min : max;
-          flag = true;
+          // TODO Toggle between focusable 'panes'.
+          // Find any 'focusable' items in a window.
+          // If a user pressed F6 we should switch to the other pane.
           break;
         default:
           return;
