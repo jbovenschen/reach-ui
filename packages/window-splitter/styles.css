@@ -1,0 +1,45 @@
+:root {
+  --reach-window-splitter: 1;
+}
+
+[data-reach-window-splitter] {
+  display: flex;
+}
+
+[data-reach-window-splitter-orientation="horizontal"] {
+  width: 100%;
+}
+
+[data-reach-window-splitter-orientation="vertical"] {
+  flex-direction: column;
+  height: 100%;
+}
+
+[data-reach-window-splitter-primary-pane],
+[data-reach-window-splitter-secondary-pane] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+[data-reach-window-splitter-separator] {
+  margin: 0;
+  border: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: linear-gradient(#f2f2f2, #f2f2f2);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-reach-window-splitter-separator-orientation="horizontal"] {
+  width: 1rem;
+  background-size: 2px 100%;
+  cursor: col-resize;
+}
+
+[data-reach-window-splitter-separator-orientation="vertical"] {
+  height: 1rem;
+  background-size: 100% 2px;
+  cursor: row-resize;
+}
