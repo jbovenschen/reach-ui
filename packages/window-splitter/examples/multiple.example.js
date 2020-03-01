@@ -9,14 +9,17 @@ let name = "Multiple";
 
 function Example() {
   return (
-    <WindowSplitter style={{ height: "400px" }}>
+    <WindowSplitter style={{ height: "400px", width: "100%" }}>
       <strong>Primary pane</strong>
-      <WindowSplitter orientation={WINDOW_SPLITTER_ORIENTATION_VERTICAL}>
-        <strong>Secondary pane</strong>
+      <WindowSplitter
+        orientation={WINDOW_SPLITTER_ORIENTATION_VERTICAL}
+        style={{ width: "100%" }}
+      >
         <WindowSplitter style={{ height: "100%" }}>
+          <strong>Secondary pane</strong>
           <strong>Tertiary pane</strong>
-          <strong>Quaternary pane</strong>
         </WindowSplitter>
+        <strong>Quaternary pane</strong>
       </WindowSplitter>
     </WindowSplitter>
   );

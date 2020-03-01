@@ -18,8 +18,23 @@
 [data-reach-window-splitter-primary-pane],
 [data-reach-window-splitter-secondary-pane] {
   flex-grow: 0;
-  flex-shrink: 0;
   overflow: hidden;
+}
+
+[data-reach-window-splitter-primary-pane] {
+  flex-shrink: 0;
+}
+
+[data-reach-window-splitter-secondary-pane] {
+  flex-shrink: 1;
+}
+
+[data-reach-window-splitter-secondary-pane-orientation="horizontal"] {
+  width: 100%;
+}
+
+[data-reach-window-splitter-secondary-pane-orientation="vertical"] {
+  height: 100%;
 }
 
 [data-reach-window-splitter-separator] {
