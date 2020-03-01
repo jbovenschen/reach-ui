@@ -559,10 +559,13 @@ if (__DEV__) {
  *
  * @see Docs ...
  */
-const WindowSplitterSecondaryPane = forwardRefWithAs<
+export const WindowSplitterSecondaryPane = forwardRefWithAs<
   WindowSplitterSecondaryPaneProps,
   "div"
->(function SecondaryPane({ children, style = {}, ...props }, forwardedRef) {
+>(function WindowSplitterSecondaryPane(
+  { children, style = {}, ...props },
+  forwardedRef
+) {
   const { orientation } = useWindowSplitterContext();
 
   const dataAttributes = makeDataAttributes("window-splitter-secondary-pane", {
